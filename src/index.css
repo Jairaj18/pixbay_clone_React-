@@ -1,0 +1,24 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.flex {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Responsive columns */
+  gap: 20px; /* Space between items */
+  justify-content: center; /* Center the grid within its container */
+  align-items: center; /* Center items vertically */
+  padding: 20px; /* Optional padding around the grid */
+}
+
+.item img {
+  width: 100%; /* Make image responsive */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px;
+}
